@@ -1,6 +1,19 @@
 IEFileuploadRails::Application.routes.draw do
-  get "ie/upload"
+  get "uploading/index"
 
+  get "uploading/index2"
+
+  get "ie/upload"
+  #get "sample1/index"
+
+  post "ie/upload" => "uploading#index"
+  
+  post "uploading/index"
+
+  get "sample1/upload2"
+
+  #match "ie/upload" => "uploading#completed"
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
