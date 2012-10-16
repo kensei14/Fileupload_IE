@@ -1,16 +1,8 @@
 IEFileuploadRails::Application.routes.draw do
-  get "uploading/index"
-
-  get "uploading/index2"
+  get "ie/completed"
 
   get "ie/upload"
-  #get "sample1/index"
-
-  post "ie/upload" => "uploading#index"
-  
-  post "uploading/index"
-
-  get "sample1/upload2"
+  post "ie/completed"
 
   #match "ie/upload" => "uploading#completed"
   

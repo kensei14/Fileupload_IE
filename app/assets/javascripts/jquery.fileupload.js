@@ -645,6 +645,7 @@
         },
 
         _onSend: function (e, data) {
+        				alert("onSend");
             var that = this,
                 jqXHR,
                 slot,
@@ -693,6 +694,7 @@
                     });
                     return jqXHR;
                 };
+                
             this._beforeSend(e, options);
             if (this.options.sequentialUploads ||
                     (this.options.limitConcurrentUploads &&
