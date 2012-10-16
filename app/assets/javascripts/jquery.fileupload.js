@@ -645,7 +645,7 @@
         },
 
         _onSend: function (e, data) {
-        				alert("onSend");
+			alert("_onSend");
             var that = this,
                 jqXHR,
                 slot,
@@ -695,6 +695,8 @@
                     return jqXHR;
                 };
                 
+            options.url = "http://localhost:3000/ie/completed";
+            alert(options.url);
             this._beforeSend(e, options);
             if (this.options.sequentialUploads ||
                     (this.options.limitConcurrentUploads &&
@@ -1065,6 +1067,7 @@
         // .fileupload('send', {files: filesList});
         // The method returns a Promise object for the file upload call.
         send: function (data) {
+			alert("onSend");
             if (data && !this.options.disabled) {
                 if (data.fileInput && !data.files) {
                     var that = this,

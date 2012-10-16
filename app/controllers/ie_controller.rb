@@ -1,10 +1,10 @@
 class IeController < ApplicationController
   def upload
-    puts "testaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    puts "test"
   end
   
   def completed
-    puts "2222222222"
-    p params[:id]
+    puts "test222222222222222222"
+    p params
   end
 end

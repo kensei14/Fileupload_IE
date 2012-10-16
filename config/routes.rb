@@ -2,6 +2,7 @@ IEFileuploadRails::Application.routes.draw do
   get "ie/completed"
 
   get "ie/upload"
+
   post "ie/completed"
 
   #match "ie/upload" => "uploading#completed"
